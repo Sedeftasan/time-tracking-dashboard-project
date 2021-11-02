@@ -24,6 +24,9 @@ class App extends React.Component {
 			timeTrackData: null,
 			currentFrame: "daily"
 		}
+	}
+
+	componentDidMount() {
 		this.fetchData()
 	}
 
@@ -39,7 +42,7 @@ class App extends React.Component {
 
 	getDateSuffix = () => {
 		const {currentFrame} = this.state
-		let suffix = ""
+		let suffix
 		if (currentFrame === "daily") {
 			suffix = "Day"
 		} else if (currentFrame === "weekly") {
