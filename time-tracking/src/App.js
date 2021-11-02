@@ -8,7 +8,8 @@ import {
 	CardHeader,
 	CardMedia,
 	Grid,
-	List, ListItem,
+	List,
+	ListItem,
 	ListItemButton,
 	ListItemText,
 	Typography
@@ -136,7 +137,10 @@ class App extends React.Component {
 												src={this.getIconName(data.title)}
 												height={50}
 											/>
-											<CardContent style={{backgroundColor: "hsl(235, 46%, 20%)", borderRadius: "40px/10px"}}>
+											<CardContent style={{
+												backgroundColor: "hsl(235, 46%, 20%)",
+												borderRadius: "40px/10px"
+											}}>
 												<div style={{display: "flex", justifyContent: "space-between"}}>
 													<Typography style={{color: "white"}}>
 														{data.title}
