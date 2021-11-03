@@ -85,22 +85,24 @@ class App extends React.Component {
 				justifyContent: "center",
 				alignItems: "center",
 				height: "100vh",
-				margin: "auto 10%"
+				margin: "auto 20%",
+				padding: "15px"
+
 			}}>
-				<Grid container style={{flexWrap: "inherit"}}>
+				<Grid container style={{flexWrap: "initial", position:"relative", left:"20px"}}>
 					<Grid item xs={12} sm={3} md={3} lg={3}>
-						<Card>
+						<Card style={{backgroundColor: "hsl(246, 80%, 60%)",borderRadius: "40px/10px"}}>
 							<CardHeader
 								avatar={
 									<Avatar alt="Jeremy Robson" src="images/image-jeremy.png"/>
 								}
-								style={{backgroundColor: "hsl(246, 80%, 60%)"}}
+								style={{backgroundColor: "hsl(246, 80%, 60%)",borderRadius: "40px/10px"}}
 							/>
-							<CardContent style={{backgroundColor: "hsl(246, 80%, 60%)"}}>
+							<CardContent style={{backgroundColor: "hsl(246, 80%, 60%)",borderRadius: "40px/10px"}}>
 								<Typography variant={"inherit"} color={"hsl(236, 100%, 87%)"}>Report for</Typography>
 								<Typography variant="h4" color="white">Jeremy Robson</Typography>
 							</CardContent>
-							<CardActions style={{backgroundColor: "hsl(235, 46%, 20%)"}}>
+							<CardActions style={{backgroundColor: "hsl(235, 46%, 20%)",borderRadius: "40px/10px"}}>
 								<List>
 									{
 										dataTimeFrames.map(frame => (
@@ -127,7 +129,7 @@ class App extends React.Component {
 							timeTrackData !== undefined && timeTrackData != null ? (
 								timeTrackData.map(data => {
 									return <Grid item xs={12} sm={4} md={4} lg={4}>
-										<Card style={{backgroundColor: "hsl(226, 43%, 10%)"}}>
+										<Card style={{backgroundColor: "hsl(226, 43%, 10%)",borderRadius: "40px/10px"}}>
 											<CardMedia
 												style={{
 													backgroundColor: this.getCardMediaBackgroundColor(data.title),
